@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px) {
+    app-nav-bar {
+        display: none;
+    }   
+    app-user-menu {
+        display: none;
+    }
+    app-mobile-nav {
+        display: inline;
+    }
+}
+@media only screen and (min-width: 601px) {
+    app-nav-bar {
+        display: none;
+    }   
+    app-user-menu {
+        display: none;
+    }
+    app-mobile-nav {
+        display: inline;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    app-nav-bar {
+        display: inline;
+    }
+    app-user-menu {
+        display: inline;
+    }
+    app-mobile-nav {
+        display: none;
+    }
+}

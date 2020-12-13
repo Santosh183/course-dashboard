@@ -1,0 +1,43 @@
+<div class="mobile-nav-container">
+    <mat-toolbar  class="mat-toolbar">
+        <button class="mat-icon-button" mat-icon-button (click)="toggleMenu()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <h3>Mobile UX/UI Designer course</h3>
+    </mat-toolbar>
+    <div [ngClass]="isNavOpen ? 'visible' : 'hidden'"  class="nav-menu-container">
+        <div class="nav-menu">
+            <div class="user-menu">
+                <img class="user-logged-in" src="../../assets/images/profile-pic.png" alt="">
+                <div class="name-role">
+                    <span class="name">Santosh Kadam</span>
+                    <span class="role">Instrcutor</span>
+                </div>
+            </div>
+            <ul class="menu-list">
+                <li> 
+                    <a href="/">
+                        <mat-icon>homee</mat-icon>
+                        <span>Home</span> 
+                    </a>
+                </li>
+                <li> 
+                    <a href="#">
+                        <mat-icon>account_circle</mat-icon>
+                        <span>My Profile</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <mat-icon>exit_to_app</mat-icon>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div (click)="toggleMenu()" [ngClass]="isNavOpen ? 'visible' : 'hidden'" class="nav-overlay">
+            
+        </div>
+    </div>
+    
+</div>
