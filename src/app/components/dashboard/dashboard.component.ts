@@ -11,6 +11,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   cards = [];
   students = [];
   subscriptions = [];
+  errorMessage='';
   order = 'Descending';
   constructor(private backEndService: BackendService) { }
 
@@ -18,12 +19,18 @@ export class DashboardComponent implements OnInit, OnDestroy {
     let sub = this.backEndService.getDashBoardCards().subscribe(
       (cards:any)=> {
         this.cards = cards;
+      },
+      (err) => {
+        this.errorMessage = err;
       }
     );
     this.subscriptions.push(sub);
     sub = this.backEndService.getStudents().subscribe(
       (students:any)=> {
         this.students = students;
+      },
+      (err) => {
+        this.errorMessage = err;
       }
     );
     this.subscriptions.push(sub);
