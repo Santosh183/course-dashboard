@@ -1,0 +1,60 @@
+<div class="dashboard-header">
+    <div class="dash-course">
+        <h3 class="dash-title">Dashboard</h3>
+        <span class="course">
+            Mobile UX/UI Design course
+        </span>
+    </div>
+</div>
+<div class="cards-container">
+    <div *ngFor="let card of cards" class="card">
+        <div class="image-container">
+            <img  *ngIf="card.type == 'profiles'"  src="../../../assets/images/dash-user.png" alt="user-pic">
+            <img  *ngIf="card.type == 'calculation'"  src="../../../assets/images/dash-graph.png" alt="user-pic">            
+        </div>
+        <div class="title-info">
+            <div class="line-1">
+                <span class="number">{{card.line1}}</span>
+                <span class="percentage">{{card?.line2}}</span>
+            </div>
+            <div class="line-2">
+                <span class="title">
+                    {{card.title}}
+                </span>
+
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="students-container">
+    <div class="header">
+        <span class="title"> Students by average marks</span>
+        <span [matMenuTriggerFor]="menu" class="order">
+            {{order}}
+            <mat-icon  >expand_more</mat-icon>
+            <mat-menu #menu="matMenu" [overlapTrigger]="false">
+                <button (click)="changeOrder('Ascending')" mat-menu-item>
+                    <span>Ascending</span> 
+                </button>
+                <button (click)="changeOrder('Descending')" mat-menu-item>
+                    <span>Descending</span>
+                </button>
+            </mat-menu>
+        </span>
+    </div>
+    <div class="students">    
+        <div *ngFor="let student of students" class="student">
+            <div class="image-name">
+                <img src="../../../assets/images/dash-user.png" alt="">
+                <span class="name">
+                    {{student.name}}
+                </span>
+            </div>
+            <div class="marks">
+                <span>
+                    {{student.marks}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -6,7 +6,16 @@
         display: none;
     }
     app-mobile-nav {
-        display: inline;
+        display: block;
+        height: 60px;
+    }
+    app-dashboard {
+        display: block;
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
     }
 }
 @media only screen and (min-width: 601px) {
@@ -17,17 +26,42 @@
         display: none;
     }
     app-mobile-nav {
-        display: inline;
+        display: block;
+        height: 60px;
+    }
+    app-dashboard {
+        display: block;
+        margin-left: 0px;
+        margin-top: 15px;
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
     }
 }
 @media only screen and (min-width: 1000px) {
     app-nav-bar {
-        display: inline;
+        display: block;
+        width: 5vw;
+        height: 100vh;
+        position: fixed;
+        background: #373B53;
     }
     app-user-menu {
-        display: inline;
+        width: calc(100% - 5vw);
+        display: block;
+        position: fixed;
+        right: 0;
+        background: #DFE1EB;
     }
     app-mobile-nav {
         display: none;
+    }
+    app-dashboard {
+        display: block;
+        margin-left: 5vw;
+        margin-top: 150px;
+        float: left;
+        width: calc(95vw - 100px);
+        padding: 10px 50px;
     }
 }

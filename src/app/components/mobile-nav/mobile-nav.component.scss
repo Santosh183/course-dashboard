@@ -15,6 +15,7 @@
             float:left;
         }
         .nav-menu {
+            background: #DFE1EB; 
             height: calc(100vh - 60px);
             width: 60vw; 
             padding: 15px 0px;
@@ -85,6 +86,7 @@
             height: calc(100vh - 60px);
             width: 40vw; 
             padding: 15px 0px;
+            background: #DFE1EB; 
             .user-menu {
                 text-align: center;
                 .user-logged-in {
@@ -131,9 +133,14 @@
 }
 
 .visible {
-    visibility: visible;
+    display: block;
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
+}
+.mobile-nav-container {
+    position: fixed;
+    width: 100%;
+    overflow: auto;
 }

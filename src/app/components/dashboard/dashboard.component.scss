@@ -1,0 +1,489 @@
+@media only screen and (max-width: 600px) {
+    .cards-container {
+        display: block;
+        overflow: auto;
+        .card {
+            width: 100%;
+            box-sizing: border-box;
+            float: left;
+            padding: 20px;
+            background: white;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            height: 100px;
+            border-radius: 10px;
+            &:first-child {
+                margin-top: 10px;
+            }
+            .image-container {
+                width: 40%;
+                float: left;
+                img {
+                    display: block;
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 50%;
+                }
+            }
+            .title-info {
+                width: 60%;
+                float: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .line-1 {
+                    padding: 5px 0px;
+                    .number {
+                        font-size: 2rem;
+                        font-weight: bold;
+                        margin-right: 10px;
+                    }
+                    .percentage {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: #A6ACBE;
+                    }
+                
+                }
+                .line-2 {
+                    padding: 5px 0px;
+                    .title {
+                        color: #A6ACBE;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .students-container {
+        clear: both;
+        border-radius: 10px;
+        background: white;
+        width: 100%;
+        .header {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px 15px 30px 15px;
+            background: white;
+            overflow: auto;
+            border-bottom: 1px solid #ddd;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            .title {
+                display: block;
+                width: 65%;
+                font-size: 1.3rem;
+                font-weight: bold;
+                float: left;
+            }
+            .order {
+                display: flex;
+                align-items: center;
+                float: right;
+                margin-right: 10px;
+            }
+        }
+        .student {
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 10px;
+            background: white;
+            height: 80px;
+            .image-name {
+                width: 75%;
+                float: left;
+                display: flex;
+                align-items: center;
+                img{
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+                .name {
+                    margin-left: 20px;
+                    font-size: 1.4rem;
+                    color: #A6ACBE;
+                }
+            }
+            .marks {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .dashboard-header {
+        display: none;
+    }
+}
+@media only screen and (min-width: 601px) {
+    .cards-container {
+        display: block;
+        overflow: auto;
+        .card {
+            width: 38%;
+            float: left;
+            padding: 20px;
+            background: white;
+            margin-right: 20px;
+            margin-left: 0px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            height: 100px;
+            border-radius: 10px;
+            .image-container {
+                width: 40%;
+                float: left;
+                img {
+                    display: block;
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 50%;
+                }
+            }
+            .title-info {
+                width: 60%;
+                float: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .line-1 {
+                    padding: 5px 0px;
+                    .number {
+                        font-size: 2rem;
+                        font-weight: bold;
+                        margin-right: 10px;
+                    }
+                    .percentage {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: #A6ACBE;
+                    }
+                
+                }
+                .line-2 {
+                    padding: 5px 0px;
+                    .title {
+                        color: #A6ACBE;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .students-container {
+        clear: both;
+        border-radius: 10px;
+        background: white;
+        width: 100%;
+        .header {
+            display: block;
+            box-sizing: border-box;
+            padding: 20px 15px 30px 15px;
+            background: white;
+            overflow: auto;
+            border-bottom: 1px solid #ddd;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            .title {
+                display: block;
+                width: 65%;
+                font-size: 1.5rem;
+                font-weight: bold;
+                float: left;
+            }
+            .order {
+                display: flex;
+                align-items: center;
+                float: right;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+        .student {
+            box-sizing: border-box;
+            padding: 10px;
+            background: white;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            .image-name {
+                display: flex;
+                align-items: center;
+                width: 75%;
+                float: left;
+                img{
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+                .name {
+                    margin-left: 20px;
+                    font-size: 1.4rem;
+                    color: #A6ACBE;
+                }
+            }
+            .marks {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .dashboard-header {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .cards-container {
+        display: block;
+        overflow: auto;
+        .card {
+            width: 25%;
+            float: left;
+            padding: 20px;
+            background: white;
+            margin: 0px;
+            margin-right: 20px;
+            height: 100px;
+            border-radius: 10px;
+            .image-container {
+                width: 40%;
+                float: left;
+                img {
+                    display: block;
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 50%;
+                }
+            }
+            .title-info {
+                width: 60%;
+                float: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .line-1 {
+                    padding: 5px 0px;
+                    .number {
+                        font-size: 2rem;
+                        font-weight: bold;
+                        margin-right: 10px;
+                    }
+                    .percentage {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: #A6ACBE;
+                    }
+                
+                }
+                .line-2 {
+                    padding: 5px 0px;
+                    .title {
+                        color: #A6ACBE;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .students-container {
+        clear: both;
+        border-radius: 10px;
+        background: white;
+        width: 60%;
+        margin-top: 20px;
+        .header {
+            display: block;
+            box-sizing: border-box;
+            padding: 20px 15px 30px 15px;
+            background: white;
+            overflow: auto;
+            border-bottom: 1px solid #ddd;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            .title {
+                display: block;
+                width: 65%;
+                font-size: 1.5rem;
+                font-weight: bold;
+                float: left;
+            }
+            .order {
+                display: flex;
+                align-items: center;
+                float: right;
+                margin-right: 10px;
+            }
+        }
+        .student {
+            box-sizing: border-box;
+            padding: 10px;
+            background: white;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            .image-name {
+                display: flex;
+                align-items: center;
+                img{
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                }
+                .name {
+                    margin-left: 20px;
+                    font-size: 1.4rem;
+                    color: #A6ACBE;
+                }
+            }
+            .marks {
+                
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .dashboard-header {
+        display: block;
+        margin-bottom: 30px;
+        .dash-course {
+            h3 {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+            .course {
+                color: #A6ACBE;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    
+    .cards-container {
+        display: block;
+        overflow: auto;
+        .card {
+            width: 27%;
+            float: left;
+            padding: 20px;
+            background: white;
+            margin: 0px;
+            margin-right: 20px;
+            height: 100px;
+            border-radius: 10px;
+            .image-container {
+                width: 40%;
+                float: left;
+                img {
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+            }
+            .title-info {
+                width: 60%;
+                float: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .line-1 {
+                    padding: 5px 0px;
+                    .number {
+                        font-size: 2rem;
+                        font-weight: bold;
+                        margin-right: 10px;
+                    }
+                    .percentage {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: #A6ACBE;
+                    }
+                
+                }
+                .line-2 {
+                    padding: 5px 0px;
+                    .title {
+                        color: #A6ACBE;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .students-container {
+        clear: both;
+        border-radius: 10px;
+        background: white;
+        width: 50%;
+        .header {
+            display: block;
+            box-sizing: border-box;
+            padding: 20px 15px 30px 15px;
+            background: white;
+            overflow: auto;
+            border-bottom: 1px solid #ddd;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            .title {
+                display: block;
+                width: 65%;
+                font-size: 1.5rem;
+                font-weight: bold;
+                float: left;
+            }
+            .order {
+                display: flex;
+                align-items: center;
+                float: right;
+                margin-right: 10px;
+            }
+        }
+        .student {
+            box-sizing: border-box;
+            padding: 10px;
+            background: white;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            .image-name {
+                display: flex;
+                align-items: center;
+                img{
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                }
+                .name {
+                    margin-left: 20px;
+                    font-size: 1.4rem;
+                    color: #A6ACBE;
+                }
+            }
+            .marks {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .dashboard-header {
+        display: block;
+        margin-bottom: 30px;
+        .dash-course {
+            h3 {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+            .course {
+                color: #A6ACBE;
+                font-size: 1rem;
+            }
+        }
+    }
+}
