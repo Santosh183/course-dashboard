@@ -10,10 +10,10 @@ export class BackendService {
   constructor(private http: HttpClient) { }
 
   getDashBoardCards():  Observable<Object> {
-    return this.http.get('http://my-json-server.typicode.com/shripad-agashe/fake-api/dashboard');
+    return this.http.get('https://my-json-server.typicode.com/shripad-agashe/fake-api/dashboard');
   }
 
   getStudents(): Observable<Object> {
-    return this.http.get('http://my-json-server.typicode.com/shripad-agashe/fake-api/students');
+    return this.http.get('https://my-json-server.typicode.com/shripad-agashe/fake-api/students');
   }
 }
